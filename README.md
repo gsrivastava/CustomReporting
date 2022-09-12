@@ -1,5 +1,5 @@
 # Sample: Copy data from Microsoft MDL to customer's MDL
-This sample demonstrates how to create a SAS token programmatically and copy data from Microsoft's MDL to customer MDL.
+This sample demonstrates how to create a SAS token programmatically and copy data from Microsoft's MDL to customer MDL covering steps 4 & 5 from: https://community.dynamics.com/365/dynamics-365-fasttrack/b/dynamics-365-fasttrack-blog/posts/custom-interactions-reporting-in-dynamics-marketing
 
 ## Running this sample
 
