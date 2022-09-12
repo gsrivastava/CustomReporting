@@ -1,9 +1,8 @@
 ﻿using Microsoft.Identity.Client;
-using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using System.Security;
 
-namespace DataProcessing
+namespace CustomReporting
 {
     /// <summary>
     /// Custom HTTP message handler that uses OAuth authentication through 
@@ -50,7 +49,7 @@ namespace DataProcessing
         }
 
         protected override Task<HttpResponseMessage> SendAsync(
-                  HttpRequestMessage request, System.Threading.CancellationToken cancellationToken)
+                  HttpRequestMessage request, CancellationToken cancellationToken)
         {
             request.Headers.Authorization = authHeader;
             return base.SendAsync(request, cancellationToken);

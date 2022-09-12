@@ -9,7 +9,7 @@ using System.Net.Http.Headers;
 using Azure.Storage.Blobs.Specialized;
 using CopyStatus = Azure.Storage.Blobs.Models.CopyStatus;
 
-namespace DataProcessing
+namespace CustomReporting
 {
     class DatalakeAPIHelper
     {

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Net.Http;
 
-namespace DataProcessing
+namespace CustomReporting
 {
     /// <summary>
     /// Shared code for common operations used by many Power Apps samples.

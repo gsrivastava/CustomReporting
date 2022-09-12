@@ -2,7 +2,7 @@
 using Azure.Storage.Blobs;
 using System.Configuration;
 
-namespace DataProcessing
+namespace CustomReporting
 {
     internal class Program
     {
@@ -29,11 +29,11 @@ namespace DataProcessing
             Console.WriteLine("Enter destination blob container name - samplecontainername:");
             string destBlobContainerName = Console.ReadLine();
 
-            string containerPathURL = string.Concat(sourceContainerUri,"/",sourcePath, "/");
+            string containerPathURL = string.Concat(sourceContainerUri, "/", sourcePath, "/");
             Console.Write("Source container path url is:" + containerPathURL);
 
             // Construct requestUri to call dataverse API
-            string requestUri = 
+            string requestUri =
                 string.Format("RetrieveAnalyticsStoreAccess(Url=@a,ResourceType='Folder',Permissions='Read,Write,List')?@a='{0}'", containerPathURL);
 
             //Get configuration data from App.config connectionStrings
